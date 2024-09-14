@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body class="body">
+
+    <div class="weather">
+        <form class="form">
+            <input type="text" class="input-form">
+            <button class="button-form">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M26.25 26.25L20.8125 20.8125M23.75 13.75C23.75 19.2728 19.2728 23.75 13.75 23.75C8.22715 23.75 3.75 19.2728 3.75 13.75C3.75 8.22715 8.22715 3.75 13.75 3.75C19.2728 3.75 23.75 8.22715 23.75 13.75Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </form>
+
+
+
+        <div class="weather-details hide">
+            <div class="details-img">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M40 3.33333V9.99999M40 70V76.6667M14.0667 14.0667L18.8 18.8M61.2 61.2L65.9333 65.9333M3.33334 40H10M70 40H76.6667M14.0667 65.9333L18.8 61.2M61.2 18.8L65.9333 14.0667M56.6667 40C56.6667 49.2047 49.2047 56.6667 40 56.6667C30.7953 56.6667 23.3333 49.2047 23.3333 40C23.3333 30.7952 30.7953 23.3333 40 23.3333C49.2047 23.3333 56.6667 30.7952 56.6667 40Z"
+                        stroke="#BCBF2C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="details-degrees">22 °C</div>
+            <div class="details-city">London</div>
+        </div>
+
+        <div class="weather-info hide">
+            <div class="info">
+                <div class="info-img">
+                    <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.7867 3.12C12.0964 2.80842 12.4783 2.57819 12.8985 2.44979C13.3187 2.32139 13.764 2.29878 14.195 2.38399C14.626 2.4692 15.0293 2.65957 15.369 2.9382C15.7087 3.21682 15.9743 3.57505 16.1422 3.98106C16.3101 4.38706 16.375 4.82826 16.3313 5.26542C16.2876 5.70258 16.1365 6.12217 15.8915 6.48688C15.6466 6.85159 15.3153 7.15013 14.9271 7.35596C14.539 7.56178 14.106 7.66851 13.6667 7.66667H1.66667M15.7867 22.88C16.0964 23.1916 16.4783 23.4218 16.8985 23.5502C17.3187 23.6786 17.764 23.7012 18.195 23.616C18.626 23.5308 19.0293 23.3404 19.369 23.0618C19.7087 22.7832 19.9743 22.425 20.1422 22.0189C20.3101 21.6129 20.375 21.1717 20.3313 20.7346C20.2876 20.2974 20.1365 19.8778 19.8915 19.5131C19.6466 19.1484 19.3153 18.8499 18.9272 18.644C18.539 18.4382 18.106 18.3315 17.6667 18.3333H1.66667M22.64 7.30667C23.0278 6.91985 23.505 6.63456 24.0292 6.47602C24.5535 6.31748 25.1088 6.29059 25.646 6.39772C26.1831 6.50485 26.6856 6.74269 27.109 7.09023C27.5324 7.43776 27.8636 7.88427 28.0733 8.39026C28.2831 8.89625 28.3649 9.44613 28.3115 9.99126C28.2582 10.5364 28.0713 11.06 27.7675 11.5157C27.4637 11.9715 27.0522 12.3453 26.5695 12.6042C26.0868 12.8631 25.5477 12.999 25 13H1.66667"
+                            stroke="#D9D9D9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="info-title">
+                    <div id="wind">10 km/h</div>
+                    <div>Wind speed</div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info-img">
+                    <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13 1.58667L20.5467 9.13334C22.0391 10.6248 23.0557 12.5254 23.4679 14.5947C23.88 16.6641 23.6692 18.8091 22.8621 20.7586C22.0549 22.7081 20.6878 24.3744 18.9335 25.5468C17.1792 26.7192 15.1166 27.3449 13.0067 27.3449C10.8967 27.3449 8.83413 26.7192 7.07986 25.5468C5.32558 24.3744 3.95841 22.7081 3.15128 20.7586C2.34415 18.8091 2.13333 16.6641 2.54547 14.5947C2.95761 12.5254 3.97421 10.6248 5.46667 9.13334L13 1.58667Z"
+                            stroke="#D9D9D9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="info-title">
+                    <div id="humidity">50%</div>
+                    <div>Humidity</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
